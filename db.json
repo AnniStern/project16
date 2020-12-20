@@ -1,0 +1,44 @@
+{
+  "musers": [
+    {
+      "name": "Иван",
+      "surname": "Иванов",
+      "years": "1999-01-01",
+      "number": "+79508154715",
+      "email": "ivanov@mail.ru",
+      "patronymic": "Иванович",
+      "type": "IT",
+      "id": 1
+    },
+    {
+      "name": "Петр",
+      "surname": "Петров",
+      "years": "1990-10-10",
+      "number": "+79508154716",
+      "email": "Petrov@gmail.com",
+      "patronymic": "Петрович",
+      "type": "Экономический",
+      "id": 2
+    },
+    {
+      "name": "Сидр",
+      "surname": "Сидоров",
+      "years": "1991-10-10",
+      "number": "+79508154717",
+      "email": "Sidorov@gmail.com",
+      "patronymic": "Сидорович",
+      "type": "Маркетинговый",
+      "id": 3
+    },
+    {
+      "name": "Василий ",
+      "surname": "Васильев",
+      "years": "1994-05-05",
+      "number": "+79508154718",
+      "email": "Vasilevo@mail.ru",
+      "patronymic": "Васильевич",
+      "type": "Юридический",
+      "id": 4
+    }
+  ]
+}

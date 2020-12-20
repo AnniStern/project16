@@ -1,0 +1,49 @@
+<div class="container-fluid">
+   <div class="row">
+    <div class="col">
+      <h4>Фильтр</h4>
+      <input 
+      type="text" 
+      class="form-control" 
+      [(ngModel)]="searchName"
+      placeholder="Введите данные">
+    
+    </div>
+  </div> 
+<br>
+   
+
+    <table id="table" class="tablesorter">
+      <thead>
+        <tr>
+          <th scope="col-3"style="cursor: pointer;">#</th>
+          <th scope="col-3" data-sort-method='none'>Имя</th>
+          <th scope="col-3" data-sort-method='none'>Фамилия</th>
+          <th scope="col-3" style="cursor: pointer;" >Возраст</th>
+          <th scope="col-3" data-sort-method='none'>Отдел</th>
+          <th  scope="col" style = "text-align: center;">
+            <button class="btn btn-primary" (click)="onAddProfile()">
+              Добавить пользователя
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users | myfilter:searchName">
+          <td scope="row">{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.surname }}</td>
+          <td>{{user.years}} </td>
+          <td> {{user.type}} </td>
+          <td style = "text-align: center;">
+            <button class="btn btn-primary" (click)="onLinkProfile(user.id)">
+              Информация
+            </button>
+            <button mat-button class="btn btn-danger" *ngIf="user.id != null" (click)="onDelete(user)">
+              Удалить
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
